@@ -1,3 +1,56 @@
+/* 
+COLOR PALETTE
+
+Shark    #2A2F33
+Nomad    #BBB6A5
+Mantle    #8C9491
+Manatee   #8C8C9C
+Off-white     #f6f6f6
+*/
+
+/* GLOBAL STYLES
+-----------------------------*/
+
 body{
-    background: green;
+    background: #BBB6A5;
+}
+
+*/LINKS STYLES*/
+a {
+   color:#8C9491 ; 
+}
+a:hover {
+    color:#BBB6A5;
+    text-decoration: none;
+}
+
+/* HOME
+------------------------------*/
+.home{ 
+    background: url(../placeholder-images/bg-home-office-studio.jpg) no-repeat;
+    background-position:center;
+}
+.home .content-wrapper{
+    background:rgb(255 255 255/0.9) ;
+}
+
+/* RESUME
+------------------------------*/
+
+/* Profile
+------------------------------*/
+
+/* Projects
+------------------------------*/
+
+/* Work Experience
+------------------------------*/
+
+/* Education
+------------------------------*/
+
+/* FOOTER
+------------------------------*/
+footer{
+    background:#8C8C9C ;
 }
