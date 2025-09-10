@@ -82,5 +82,9 @@ body {
 }
 .move{
     animation: ;
-    font-size: large ;
+    font-size: large;
+}
+
+@keyframes move {
+    
 }
