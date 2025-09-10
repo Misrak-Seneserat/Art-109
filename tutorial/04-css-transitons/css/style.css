@@ -1,0 +1,39 @@
+
+.title {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.square {
+    background-color: aquamarine;
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    margin: 75px auto;
+    transition:t all 1s ;
+}
+
+.square:hover{ 
+    background-color: blue;
+    transform: rotate(30deg); 
+}
+
+.button-div {
+    text-align: center;
+}
+
+.button {
+    background-color: blue;
+    color: #ffff;
+    padding: 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 75px auto;
+    text-decoration: none;
+    display:inline-block;
+    transition: all .5s;
+}
+.button:hover {
+    background-color: violet;
+    color: black;
+    transform: scale(1.5);
+}
