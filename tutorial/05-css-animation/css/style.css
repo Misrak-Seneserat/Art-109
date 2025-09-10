@@ -8,11 +8,11 @@ body {
     }
 
     50% {
-        background-color: goldenrod;
+        background-color: rgb(32, 32, 218);
     }
 
     10% {
-        background-color: greenyellow;
+        background-color: rgb(213, 47, 255);
     }
 }
 
@@ -76,23 +76,73 @@ body {
 }
 
 @keyframes stretch {
-    0% {width: 100px;}
+    0% {
+        width: 100px;
+    }
 
-    100% { width: 80vw;}
-}
-.move{
-    animation: ;
-    font-size: large;
-}
-
-@keyframes move {
-    
+    100% {
+        width: 80vw;
+    }
 }
 
-.dance{
+.Ghost {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: 1.5s;
+    font-size: 10em;
+    color: #ffff;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+}
+
+.Ghost:hover span {
+    filter: blur(20px);
+    opacity: 0;
+    transform: scale(2);
+}
+
+.glow {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    color: 111;
+    font-size: 16em;
+}
+
+.glow:hover span {
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    animation: animate 2s linear infinite;
 
 }
 
-@keyframes dance {
-    
+@keyframes animate {
+
+    0%,
+    100% {
+        color: #ffff;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #00b3ff,
+            0 0 20px #00b3ff,
+            0 0 40px #00b3ff,
+            0 0 80px #00b3ff,
+            0 0 120px #00b3ff,
+            0 0 200px #00b3ff,
+            0 0 300px #00b3ff,
+            0 0 400px #00b3ff;
+    }
+
+    5%,
+    95% {
+        color: #111;
+        filter: blur(0px);
+        text-shadow: 0 0 10px none;
+    }
 }
