@@ -10,6 +10,15 @@ Off-white     #f6f6f6
 
 /* GLOBAL STYLES
 -----------------------------*/
+/* 
+  https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 body{
     background: #BBB6A5;
@@ -53,4 +62,8 @@ a:hover {
 ------------------------------*/
 footer{
     background:#8C8C9C ;
+}
+.socials{
+    list-style-type: none;
+    padding: 0;
 }
