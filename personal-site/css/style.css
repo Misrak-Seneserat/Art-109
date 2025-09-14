@@ -19,9 +19,13 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+html,body{
+    height: 100%;
+}
 
 body{
     background: #BBB6A5;
+    margin: 0;
 }
 
 */LINKS STYLES*/
@@ -32,6 +36,12 @@ a:hover {
     color:#BBB6A5;
     text-decoration: none;
 }
+.content-wrapper{
+    margin: 0 auto;
+    max-width: 900pxxs;
+    padding: 30px;
+}
+
 
 /* HOME
 ------------------------------*/
@@ -45,9 +55,37 @@ a:hover {
 
 /* RESUME
 ------------------------------*/
+.resume header::before{
+    background: url(../placeholder-images/bg-home-office-studio.jpg) center;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 375px;
+
+}
+.resume-section{
+    margin-bottom: 50px;
+}
+.resume-section h2{
+    border-bottom: 2px dashed #8C8C9C;
+}
+.download-link{
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
 
 /* Profile
 ------------------------------*/
+.project-item{
+    display: flow-root;
+    margin: 30px 0;
+}
+.project-item img{
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
 
 /* Projects
 ------------------------------*/
@@ -66,4 +104,10 @@ footer{
 .socials{
     list-style-type: none;
     padding: 0;
+}
+.socials li{
+    display: inline-block;
+}
+.socials img{
+    width: 32px;
 }
