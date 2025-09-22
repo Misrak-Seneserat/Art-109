@@ -1,18 +1,26 @@
-console.log("Helloo");
+document.querySelector("#image01").addEventListener("click", function (params) { document.querySelector("#image01").style.display= "none"
+    
+})
 
+document.querySelector("#image02").addEventListener("click", function (params) { document.querySelector("#image02").style.display= "none"
+    
+})
 
-let pageTitle = document.querySelector("#page-title");
-///JAVASCRIPT Timed color change
-setTimeout(function(params) { pageTitle.style.color = "pink";
-   //console.log("timeout worked");
-}, 3000)
+document.querySelector("#image03").addEventListener("click", function (params) { document.querySelector("#image03").style.display= "none"
+    
+})
 
-///Click event on header change background
-document.querySelector("header").onclick = function(){
-    //console.log("clicked header");
-    document.querySelector("body").style.backgroundColor = "yellow"
-}
+document.querySelector("#image04").addEventListener("click", function (params) { document.querySelector("#image04").style.display= "none"
+    
+})
 
+document.querySelector("#image05").addEventListener("click", function (params) { document.querySelector("#image05").style.visibility= "hidden"
+    
+})
+
+document.querySelector("#image06").addEventListener("click", function (params) { document.querySelector("#image06").style.visibility= "hidden"
+    
+})
 
 
 
