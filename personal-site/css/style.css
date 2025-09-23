@@ -14,29 +14,41 @@ Off-white     #f6f6f6
   https://www.paulirish.com/2012/box-sizing-border-box-ftw/
 */
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
-html,body{
+
+html,
+body {
     height: 100%;
 }
 
-body{
+body {
     background: #BBB6A5;
     margin: 0;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h1, h2, h3{
+    font-family: 'Caveat', cursive;
 }
 
-*/LINKS STYLES*/
-a {
-   color:#8C9491 ; 
+*/LINKS STYLES*/ a {
+    color: #8C9491;
 }
+
 a:hover {
-    color:#BBB6A5;
+    color: #BBB6A5;
     text-decoration: none;
 }
-.content-wrapper{
+
+.content-wrapper {
     margin: 0 auto;
     max-width: 900pxxs;
     padding: 30px;
@@ -45,25 +57,27 @@ a:hover {
 
 /* HOME
 ------------------------------*/
-.home{ 
+.home {
     background: url(../placeholder-images/bg-home-office-studio.jpg) no-repeat;
-    background-position:center;
-    display:flex;
+    background-position: center;
+    display: flex;
     flex-direction: column;
 }
-.home .content-wrapper{
-   
+
+.home .content-wrapper {
+
     flex: 1 0 auto;
 }
+
 .content-bg {
-     background:rgb(255 255 255/0.9) ;
-     padding: 30px;
+    background: rgb(255 255 255/0.9);
+    padding: 30px;
 
 }
 
 /* RESUME
 ------------------------------*/
-.resume header::before{
+.resume header::before {
     background: url(../placeholder-images/bg-home-office-studio.jpg) center;
     background-size: cover;
     content: "";
@@ -71,13 +85,16 @@ a:hover {
     height: 375px;
 
 }
-.resume-section{
+
+.resume-section {
     margin-bottom: 50px;
 }
-.resume-section h2{
+
+.resume-section h2 {
     border-bottom: 2px dashed #8C8C9C;
 }
-.download-link{
+
+.download-link {
     position: fixed;
     top: 5px;
     left: 5px;
@@ -85,11 +102,12 @@ a:hover {
 
 /* Profile
 ------------------------------*/
-.project-item{
+.project-item {
     display: flow-root;
     margin: 30px 0;
 }
-.project-item img{
+
+.project-item img {
     width: 300px;
     float: left;
     margin-right: 20px;
@@ -100,7 +118,7 @@ a:hover {
 
 /* Work Experience
 ------------------------------*/
-.work-item{
+.work-item {
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: 20px;
@@ -111,23 +129,27 @@ a:hover {
 
 /* FOOTER
 ------------------------------*/
-footer{
-    background:#8C8C9C ;
+footer {
+    background: #8C8C9C;
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
 }
-.socials{
+
+.socials {
     list-style-type: none;
     padding: 0;
     margin-left: 10px;
 }
-.socials li{
+
+.socials li {
     display: inline-block;
 }
-.socials img{
+
+.socials img {
     width: 32px;
 }
+
 .socials img:hover {
     opacity: 0.5;
 
