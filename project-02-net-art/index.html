@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Supreme Mathematics — Pop Up Text Site (Wu-Tang Inspired)</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Link external CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container" id="page">
+    <header>
+      <a href="#" class="brand" aria-label="Home">
+        <div class="logo" aria-hidden="true">SM</div>
+        <div>
+          <h1>Supreme Mathematics Pop-Up</h1>
+          <div class="sub">Wu-Tang inspired — interactive popups for 1 → 10</div>
+        </div>
+      </a>
+
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#grid">Numbers</a>
+        <a href="#media">Media</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="about" aria-labelledby="heroTitle">
+        <div class="hero-inner">
+          <div class="thumb" role="img" aria-label="Wu-inspired art placeholder">
+            <img srcset="placeholder-600.jpg 600w, placeholder-1200.jpg 1200w"
+                 sizes="(max-width:720px) 100vw, 300px"
+                 src="placeholder-600.jpg" alt="Abstract yellow and black collage">
+          </div>
+
+          <div class="lead">
+            <h2 id="heroTitle">What is this?</h2>
+            <p>
+              An interactive site that displays the Supreme Mathematics (1–10) as pop-up text cards.
+              The aesthetic is inspired by Wu-Tang’s color and energy; replace visuals with original or licensed materials.
+            </p>
+            <p style="margin-top:12px;color:var(--muted)">
+              Click any card below to open a pop-up with the full text for that number.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid" id="grid" aria-label="Supreme Mathematics">
+        <article class="card" tabindex="0">
+          <h3>1 — Knowledge</h3>
+          <p>Click to view full text</p>
+          <button class="btn" data-title="1 — Knowledge" data-text="1 — Knowledge\n\nThe foundation: knowledge is the light that shows the way.">
+            OPEN
+          </button>
+        </article>
+
+        <article class="card" tabindex="0">
+          <h3>2 — Wisdom</h3>
+          <p>Click to view full text</p>
+          <button class="btn" data-title="2 — Wisdom" data-text="2 — Wisdom\n\nThe application of knowledge; insight and experience.">
+            OPEN
+          </button>
+        </article>
+
+        <article class="card" tabindex="0">
+          <h3>3 — Understanding</h3>
+          <p>Click to view full text</p>
+          <button class="btn" data-title="3 — Understanding" data-text="3 — Understanding\n\nStep deeper: comprehension, seeing beyond the surface.">
+            OPEN
+          </button>
+        </article>
+
+        <article class="card" tabindex="0">
+          <h3>4 — Culture/Freedom</h3>
+          <p>Click to view full text</p>
+          <button class="btn" data-title="4 — Culture / Freedom" data-text="4 — Culture / Freedom\n\nThe way we live and move; autonomy in spirit and action.">
+            OPEN
+          </button>
+        </article>
+
+        <article class="card" tabindex="0">
+          <h3>5 — Power/Refinement</h3>
+          <p>Click to view full text</p>
+          <button class="btn" data-title="5 — Power / Refinement" data-text="5 — Power / Refinement\n\nFocused strength; the force that refines and sharpens.">
+            OPEN
+          </button>
+        </article>
+
+        <article class="card" tabindex="0">
+          <h3>6 — Equality</h3>
+          <p>Click to view full text</p>
+          <button class="btn" data-title="6 — Equality" data-text="6 — Equality\n\nBalance and justice; all parts in harmony.">
+            OPEN
+          </button>
+        </article>
+
+        <article class="card" tabindex="0">
+          <h3>7 — God / Godhood</h3>
+          <p>Click to view full text</p>
+          <button class="btn" data-title="7 — God / Godhood" data-text="7 — God / Godhood\n\nSelf mastery; sovereignty and spiritual power.">
+            OPEN
+          </button>
+        </article>
+
+        <article class="card" tabindex="0">
+          <h3>8 — Build/Destroy</h3>
+          <p>Click to view full text</p>
+          <button class="btn" data-title="8 — Build / Destroy" data-text="8 — Build / Destroy\n\nCreation and disruption; cycles of making and unmaking.">
+            OPEN
+          </button>
+        </article>
+
+        <article class="card" tabindex="0">
+          <h3>9 — Born</h3>
+          <p>Click to view full text</p>
+          <button class="btn" data-title="9 — Born" data-text="9 — Born\n\nCompletion; bringing forth the finished artifact or idea.">
+            OPEN
+          </button>
+        </article>
+
+        <article class="card" tabindex="0">
+          <h3>10 — Cipher</h3>
+          <p>Click to view full text</p>
+          <button class="btn" data-title="10 — Cipher" data-text="10 — Cipher\n\nThe circle: unity, the sum of all parts, movement in rhythm.">
+            OPEN
+          </button>
+        </article>
+      </section>
+
+      <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-hidden="true" style="display:none;">
+        <div class="modal" role="document">
+          <h2 id="modalTitle">Title</h2>
+          <div class="content" id="modalContent">Content</div>
+          <button class="close" id="closeModal">Close</button>
+        </div>
+      </div>
+
+      <section class="footer" id="media">
+        <div>
+          <h3 style="margin:0;color:var(--accent)">Media & Links</h3>
+          <p style="margin:6px 0 0;color:var(--muted)">Add video embeds or authorized music links here.</p>
+        </div>
+
+        <div class="media">
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener">Video Link 1</a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener">Video Link 2</a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll('.btn');
+    const backdrop = document.getElementById('modalBackdrop');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalContent = document.getElementById('modalContent');
+    const closeBtn = document.getElementById('closeModal');
+
+    function openModal(title, text) {
+      modalTitle.textContent = title || '';
+      modalContent.textContent = text || '';
+      backdrop.style.display = 'flex';
+      backdrop.setAttribute('aria-hidden','false');
+      document.body.style.overflow = 'hidden';
+      closeBtn.focus();
+    }
+
+    function closeModal() {
+      backdrop.style.display = 'none';
+      backdrop.setAttribute('aria-hidden','true');
+      document.body.style.overflow = '';
+    }
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        openModal(btn.dataset.title, btn.dataset.text);
+      });
+    });
+
+    closeBtn.addEventListener('click', closeModal);
+    backdrop.addEventListener('click', e => { if(e.target === backdrop) closeModal(); });
+    document.addEventListener('keydown', e => { if(e.key === 'Escape') closeModal(); });
+  </script>
+</body>
+</html>
