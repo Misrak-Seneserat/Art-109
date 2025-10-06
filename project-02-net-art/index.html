@@ -37,175 +37,246 @@
         <main>
             <section class="hero" id="about" aria-labelledby="heroTitle">
                 <div class="hero-inner">
-                    <div class="thumb" role="img" aria-label="Wu-inspired art placeholder">
-                        <img srcset="placeholder-600.jpg 600w, placeholder-1200.jpg 1200w"
-                            sizes="(max-width:720px) 100vw, 300px" src="placeholder-600.jpg"
-                            alt="Abstract yellow and black collage">
+                    <div class="thumb" role="img" <div class="carousel">
+                        <div class="slides fade">
+                            <img src="images/images-1.jpeg" alt="Image 1">
+                        </div>
+                        <div class="slides fade">
+                            <img src="images/images.jpeg" alt="Image 2">
+                        </div>
+                        <div class="slides fade">
+                            <img src="images/s0pn5jeahc8t5sj8.jpg" alt="Image 3">
+                        </div>
                     </div>
 
-                    <div class="lead">
-                        <h2 id="heroTitle">Who Is the 5% Nation?</h2>
-                        <p>
-                            The 5% Nation was founded by a man named Allah (honorably Clarence Edward Smith) in the
-                            early 1960s in Harlem, New York. Allah, a former member of the Nation of Islam, left to
-                            teach the youth the "Knowledge of Self," focusing on self-empowerment, community engagement,
-                            and the understanding that every Black man can become his own God. Sharing a deeper
-                            understanding of divinity beyond traditional religious structures. To fully grasp the
-                            essence of the 5% Nation, it's important to understand the meaning behind our name and core
-                            tenets. The 5% Nation derives its name from the concept that only 5% of people possess true
-                            knowledge and understanding of themselves and the world, while the remaining 95% are either
-                            ignorant or oppressors.
-                        </p>
-                        <p style="margin-top:12px;color:var(--muted)">
-                            The cards below contain the Supreme Mathamatics 1-9. The purpose of these "poor righteous
-                            teachers" is to educate and enlighten members about spiritual truth. Allowing members make
-                            logical connections in life, developing a sense of "living mathematics."
-                        </p>
-                    </div>
+                    <script>
+                        let slideIndex = 0;
+                        showSlides();
+
+                        function plusSlides(n) {
+                            slideIndex += n - 1;
+                            showSlides();
+                        }
+                        function showSlides() {
+                            const slides = document.getElementsByClassName("slides");
+                            for (let i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+                            slideIndex++;
+                            if (slideIndex > slides.length) { slideIndex = 1 }
+                            slides[slideIndex - 1].style.display = "block";
+                            setTimeout(showSlides, 4000); // Change image every 4 seconds
+                        }
+                    </script>
+
+
+
+
                 </div>
-            </section>
 
-            <section class="grid" id="grid" aria-label="Supreme Mathematics">
-                <article class="card" tabindex="0">
-                    <h3>1 — Knowledge</h3>
-                    <button class="btn" data-title="1 — Knowledge"
-                        data-text="Knowledge is to know, listen and observe. Knowledge is a body of accumulated facts. Knowledge is the foundation for all things, as the Sun is the foundation for our solar system and man is the foundation for his family.">
-                        OPEN
-                    </button>
-                </article>
 
-                <article class="card" tabindex="0">
-                    <h3>2 — Wisdom</h3>
-                    <button class="btn" data-title="2 — Wisdom"
-                        data-text="Wisdom is the manifestation of ones knowledge, the ways and actions one uses to make his or her knowledge to know the truth, such as speaking wisely to the wise, to the dumb or to possess a wise Mind. Wisdom is the woman.">
-                        OPEN
-                    </button>
-                </article>
-
-                <article class="card" tabindex="0">
-                    <h3>3 — Understanding</h3>
-                    <button class="btn" data-title="3 — Understanding"
-                        data-text="Understanding is the mental picture one draws of knowledge wisdom. To see things much clearer for what they are, (not for what they present themselves to be) visible through the all Seeing Eye, which is the Mind. Understanding is the child.">
-                        OPEN
-                    </button>
-                </article>
-
-                <article class="card" tabindex="0">
-                    <h3>4 — Culture/Freedom</h3>
-                    <button class="btn" data-title="4 — Culture / Freedom"
-                        data-text="Culture or Freedom: Culture is ones way of life; Islam is the culture of freedom and righteousness, the culture of peace, in which all things coincide and lives in harmony. The Culture is I-God, I-Self-Lord-Asiatic-Master.">
-                        OPEN
-                    </button>
-                </article>
-
-                <article class="card" tabindex="0">
-                    <h3>5 — Power/Refinement</h3>
-                    <button class="btn" data-title="5 — Power / Refinement"
-                        data-text="Power or Refinement: Power is the truth, truth in origin only means of refinement; for to go according to the truth is to make ones-self known again. Trith is the power to resurrect the mentally dead from their present state of unawareness and ignorance of self.">
-                        OPEN
-                    </button>
-                </article>
-
-                <article class="card" tabindex="0">
-                    <h3>6 — Equality</h3>
-                    <button class="btn" data-title="6 — Equality"
-                        data-text="Equality means to be equal in all aspects of one's true self.">
-                        OPEN
-                    </button>
-                </article>
-
-                <article class="card" tabindex="0">
-                    <h3>7 — God</h3>
-                    <button class="btn" data-title="7 — God"
-                        data-text="God is a wise man's equality, manifesting build or destroy. I is self, self is the true reality, son of man God, (7) the all Seeing Eye, the All in all who is Allah the Original man.">
-                        OPEN
-                    </button>
-                </article>
-
-                <article class="card" tabindex="0">
-                    <h3>8 — Build/Destroy</h3>
-                    <button class="btn" data-title="8 — Build / Destroy"
-                        data-text="Build or Destroy: Build means to add on to life a positive creation or education; destroy means to know of, take, that which is untrue, and light to the knowledge.">
-                        OPEN
-                    </button>
-                </article>
-
-                <article class="card" tabindex="0">
-                    <h3>9 — Born</h3>
-                    <button class="btn" data-title="9 — Born"
-                        data-text="Born is to bring into existence a mental birth of self.">
-                        OPEN
-                    </button>
-                </article>
-
-                <article class="card" tabindex="0">
-                    <h3>0 — Cipher</h3>
-                    <button class="btn" data-title="0 — Cipher"
-                        data-text="Cipher is the completion of a circle or 360 degrees of Knowledge, Wisdom and Understanding,">
-                        OPEN
-                    </button>
-                </article>
-            </section>
-
-            <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-hidden="true"
-                style="display:none;">
-                <div class="modal" role="document">
-                    <h2 id="modalTitle">Title</h2>
-                    <div class="content" id="modalContent">Content</div>
-                    <button class="close" id="closeModal">Close</button>
-                </div>
-            </div>
-
-            <section class="footer" id="media">
-                <div>
-                    <h3 style="margin:0;color:var(--accent)">Offical Website</h3>
-                    <p style="margin:6px 0 0;col:var(--muted)">
-                        <a href="https://thefivepercentnation.com/" target="_blank">Visit The Five Precent Nation
-                            Website</a>
-
+                <div class="lead">
+                    <h2 id="heroTitle">Who Is the Five Nation?</h2>
+                    <p>
+                        The Five Nation was founded by a man named Allah (honorably Clarence Edward Smith) in the
+                        early 1960s in Harlem, New York. Allah, a former member of the Nation of Islam, he left to
+                        teach the youth the "Knowledge of Self," focusing on self-empowerment, community engagement,
+                        and the understanding that every Black man can become his own God. Sharing a deeper
+                        understanding of divinity beyond traditional religious structures. In late 1963, Clarence, now
+                        known as "Allah", along with his companions Abu Shahid (formerly John 37X), Free Cipher Akbar
+                        aka Ol Man Justice C (formerly James Howell), and Hebeka (formerly Eugene 32X), began walking
+                        the streets of Harlem, teaching the youth about their divine nature and their potential. By
+                        October 1964, Allah officially established the Five Percent Nation. The Five Nation derives its
+                        name from the concept that only Five of people possess true
+                        knowledge and understanding of themselves and the world, while the remaining 95% are either
+                        ignorant or oppressors.
+                    </p>
+                    <p style="margin-top:12px;color:var(--muted)">
+                        The cards below contain the Supreme Mathamatics 1-9. The purpose of these "poor righteous
+                        teachers" is to educate and enlighten members about spiritual truth. Allowing members make
+                        logical connections in life, developing a sense of "living mathematics."
                     </p>
                 </div>
-
-                <div class="media">
-                    <a href="https://www.youtube.com/" target="_blank" rel="noopener">Video Link 1</a>
-                    <a href="https://www.youtube.com/" target="_blank" rel="noopener">Video Link 2</a>
-                </div>
-            </section>
-        </main>
     </div>
+    </section>
 
-    <script>
-        const buttons = document.querySelectorAll('.btn');
-        const backdrop = document.getElementById('modalBackdrop');
-        const modalTitle = document.getElementById('modalTitle');
-        const modalContent = document.getElementById('modalContent');
-        const closeBtn = document.getElementById('closeModal');
+    <section class="card-section" id="grid">
+        <div class="grid">
+            <div class="card">
+                <h3>1 — Knowledge</h3>
+                <button class="btn" data-title="1 — Knowledge"
+                    data-text="Knowledge is to know, listen and observe. Knowledge is a body of accumulated facts. Knowledge is the foundation for all things, as the Sun is the foundation for our solar system and man is the foundation for his family.">
+                    OPEN
+                </button>
+                </article>
+            </div>
 
-        function openModal(title, text) {
-            modalTitle.textContent = title || '';
-            modalContent.textContent = text || '';
-            backdrop.style.display = 'flex';
-            backdrop.setAttribute('aria-hidden', 'false');
-            document.body.style.overflow = 'hidden';
-            closeBtn.focus();
-        }
+            <section class="card-section" id="grid">
+                <div class="grid">
+                    <div class="card">
+                        <h3>2 — Wisdom</h3>
+                        <button class="btn" data-title="2 — Wisdom"
+                            data-text="Wisdom is the manifestation of ones knowledge, the ways and actions one uses to make his or her knowledge to know the truth, such as speaking wisely to the wise, to the dumb or to possess a wise Mind. Wisdom is the woman.">
+                            OPEN
+                        </button>
+                        </article>
+                    </div>
 
-        function closeModal() {
-            backdrop.style.display = 'none';
-            backdrop.setAttribute('aria-hidden', 'true');
-            document.body.style.overflow = '';
-        }
 
-        buttons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                openModal(btn.dataset.title, btn.dataset.text);
-            });
-        });
+                    <section class="card-section" id="grid">
+                        <div class="grid">
+                            <div class="card">
+                                <h3>3 — Understanding</h3>
+                                <button class="btn" data-title="3 — Understanding"
+                                    data-text="Understanding is the mental picture one draws of knowledge wisdom. To see things much clearer for what they are, (not for what they present themselves to be) visible through the all Seeing Eye, which is the Mind. Understanding is the child.">
+                                    OPEN
+                                </button>
+                                </article>
+                            </div>
 
-        closeBtn.addEventListener('click', closeModal);
-        backdrop.addEventListener('click', e => { if (e.target === backdrop) closeModal(); });
-        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
-    </script>
+
+                            <section class="card-section" id="grid">
+                                <div class="grid">
+                                    <div class="card">
+                                        <h3>4 — Culture/Freedom</h3>
+                                        <button class="btn" data-title="4 — Culture / Freedom"
+                                            data-text="Culture or Freedom: Culture is ones way of life; Islam is the culture of freedom and righteousness, the culture of peace, in which all things coincide and lives in harmony. The Culture is I-God, I-Self-Lord-Asiatic-Master.">
+                                            OPEN
+                                        </button>
+                                        </article>
+                                    </div>
+
+                                    <section class="card-section" id="grid">
+                                        <div class="grid">
+                                            <div class="card">
+                                                <h3>5 — Power/Refinement</h3>
+                                                <button class="btn" data-title="5 — Power / Refinement"
+                                                    data-text="Power or Refinement: Power is the truth, truth in origin only means of refinement; for to go according to the truth is to make ones-self known again. Trith is the power to resurrect the mentally dead from their present state of unawareness and ignorance of self.">
+                                                    OPEN
+                                                </button>
+                                                </article>
+                                            </div>
+
+
+                                            <section class="card-section" id="grid">
+                                                <div class="grid">
+                                                    <div class="card">
+                                                        <h3>6 — Equality</h3>
+                                                        <button class="btn" data-title="6 — Equality"
+                                                            data-text="Equality means to be equal in all aspects of one's true self.">
+                                                            OPEN
+                                                        </button>
+                                                        </article>
+                                                    </div>
+
+                                                        <section class="card-section" id="grid">
+                                                <div class="grid">
+                                                    <div class="card">
+                                                            <h3>7 — God</h3>
+                                                            <button class="btn" data-title="7 — God"
+                                                                data-text="God is a wise man's equality, manifesting build or destroy. I is self, self is the true reality, son of man God, (7) the all Seeing Eye, the All in all who is Allah the Original man.">
+                                                                OPEN
+                                                            </button>
+                                                        
+                                                        </div>
+
+                                                        <section class="card-section" id="grid">
+                                                <div class="grid">
+                                                    <div class="card">
+                                                            <h3>8 — Build/Destroy</h3>
+                                                            <button class="btn" data-title="8 — Build / Destroy"
+                                                                data-text="Build or Destroy: Build means to add on to life a positive creation or education; destroy means to know of, take, that which is untrue, and light to the knowledge.">
+                                                                OPEN
+                                                            </button>
+                                                        </div>
+
+                                                        <section class="card-section" id="grid">
+                                                <div class="grid">
+                                                    <div class="card">
+                                                            <h3>9 — Born</h3>
+                                                            <button class="btn" data-title="9 — Born"
+                                                                data-text="Born is to bring into existence a mental birth of self.">
+                                                                OPEN
+                                                            </button>
+                                                          </div>
+
+                                                        <section class="card-section" id="grid">
+                                                <div class="grid">
+                                                    <div class="card">
+                                                            <h3>0 — Cipher</h3>
+                                                            <button class="btn" data-title="0 — Cipher"
+                                                                data-text="Cipher is the completion of a circle or 360 degrees of Knowledge, Wisdom and Understanding,">
+                                                                OPEN
+                                                            </button>
+                                                          </div>
+                                            </section>
+
+                                            <div class="modal-backdrop" id="modalBackdrop" role="dialog"
+                                                aria-modal="true" aria-hidden="true" style="display:none;">
+                                                <div class="modal" role="document">
+                                                    <h2 id="modalTitle">Title</h2>
+                                                    <div class="content" id="modalContent">Content</div>
+                                                    <button class="close" id="closeModal">Close</button>
+                                                </div>
+                                            </div>
+
+                                            <section class="footer" id="media">
+                                                <div>
+                                                    <h3 style="margin:0;color:var(--accent)">Offical Website</h3>
+                                                    <p style="margin:6px 0 0;col:var(--muted)">
+                                                        <a href="https://thefivepercentnation.com/"
+                                                            target="_blank">Visit The
+                                                            Five Precent
+                                                            Nation
+                                                            Website</a>
+
+                                                    </p>
+                                                </div>
+
+                                                <div class="media">
+                                                    <a href="https://www.youtube.com/" target="_blank"
+                                                        rel="noopener">Video Link
+                                                        1</a>
+                                                    <a href="https://www.youtube.com/" target="_blank"
+                                                        rel="noopener">Video Link
+                                                        2</a>
+                                                </div>
+                                            </section>
+                                            </main>
+                                        </div>
+
+                                        <script>
+                                            const buttons = document.querySelectorAll('.btn');
+                                            const backdrop = document.getElementById('modalBackdrop');
+                                            const modalTitle = document.getElementById('modalTitle');
+                                            const modalContent = document.getElementById('modalContent');
+                                            const closeBtn = document.getElementById('closeModal');
+
+                                            function openModal(title, text) {
+                                                modalTitle.textContent = title || '';
+                                                modalContent.textContent = text || '';
+                                                backdrop.style.display = 'flex';
+                                                backdrop.setAttribute('aria-hidden', 'false');
+                                                document.body.style.overflow = 'hidden';
+                                                closeBtn.focus();
+                                            }
+
+                                            function closeModal() {
+                                                backdrop.style.display = 'none';
+                                                backdrop.setAttribute('aria-hidden', 'true');
+                                                document.body.style.overflow = '';
+                                            }
+
+                                            buttons.forEach(btn => {
+                                                btn.addEventListener('click', () => {
+                                                    openModal(btn.dataset.title, btn.dataset.text);
+                                                });
+                                            });
+
+                                            closeBtn.addEventListener('click', closeModal);
+                                            backdrop.addEventListener('click', e => { if (e.target === backdrop) closeModal(); });
+                                            document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+                                        </script>
 </body>
 
 </html>

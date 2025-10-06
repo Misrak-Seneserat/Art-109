@@ -150,42 +150,38 @@ nav a:hover {
 /* =========================================================
    INFO CARD GRID 
    ========================================================= */
+.card-section {
+  min-height: 100vh; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  padding: 60px 0; 
+}
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 14px;
-  margin-top: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 18px;
+  justify-items: center;
+  text-align: center;
 }
-
 .card {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.02));
+  width: 220px;
+  background: linear-gradient(#ffee00ad, rgba(255,255,255,0.01), rgba(255,255,255,0.02));
   border-radius: 12px;
   padding: 14px;
-  min-height: 110px;
+  min-height: 130px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center; /* centers text inside card */
   gap: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255,255,255,0.03);
   transition: transform 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-4px);
 }
-
-.card h3 {
-  margin: 0;
-  font-size: 1.05rem;
-  color: var(--accent);
-}
-
-.card p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
 /* =========================================================
    BUTTONS
    ========================================================= */
@@ -294,4 +290,31 @@ nav a:hover {
     height: 56px;
   }
 }
+/* === IMAGE CARSOUEL =======*/
+.carousel {
+  position: relative;
+  max-width: 700px;
+  margin: 40px auto;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+}
+.carousel img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.slides {
+  display: none;
+}
 
+/* Fade animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from { opacity: .4 }
+  to { opacity: 1 }
+}
