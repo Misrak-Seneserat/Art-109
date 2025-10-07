@@ -18,7 +18,7 @@ html, body {
   height: 100%;
   margin: 0;
   background: linear-gradient(180deg, #070707 0%, #0f0f0f 100%);
-  color: #fff;
+  color: #f1c40f;;
   font-family: "Oswald", system-ui, sans-serif;
 }
 
@@ -166,7 +166,7 @@ nav a:hover {
 }
 .card {
   width: 220px;
-  background: linear-gradient(#ffee00ad, rgba(255,255,255,0.01), rgba(255,255,255,0.02));
+  background: linear-gradient(#f1c40f, rgba(255,255,255,0.01), rgba(255,255,255,0.02));
   border-radius: 12px;
   padding: 14px;
   min-height: 130px;
@@ -226,8 +226,8 @@ nav a:hover {
   padding: 8px;
   border-radius: 8px;
   text-decoration: none;
-  color: var(--muted);
-  border: 1px solid rgba(255, 255, 255, 0.03);
+  color: #f1c40f;
+  border: 1px solid#f1c40f;
   font-size: 0.9rem;
 }
 
@@ -270,7 +270,7 @@ nav a:hover {
 .close {
   margin-top: 16px;
   background: transparent;
-  color: var(--muted);
+  color: #f1c40f;
   border: 1px solid rgba(255, 255, 255, 0.06);
   padding: 8px 12px;
   border-radius: 8px;
@@ -290,7 +290,9 @@ nav a:hover {
     height: 56px;
   }
 }
-/* === IMAGE CARSOUEL =======*/
+/* ========================================= 
+  IMAGE CARSOUEL
+==========================================*/
 .carousel {
   position: relative;
   max-width: 700px;
