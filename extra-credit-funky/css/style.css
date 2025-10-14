@@ -5,6 +5,7 @@ body {
 
 header {
     text-align: center;
+    
 }
 
 main {
@@ -22,8 +23,8 @@ background-color: red;
 
 }
 .circle {
-    width: 100px;
-    height: 100px;
+    width: 400px;
+    height: 400px;
     margin: 75px auto;
     background-color: #ff69a9;
     animation: shape-1 2s infinite alternate;
@@ -52,9 +53,21 @@ img {
 }
 
 h1 {
-    
+    font-family: nabla;
 }
-
+h3{
+ font-family: nabla;
+}
 p {
 
+}
+
+.nabla-<uniquifier> {
+  font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12;
 }
