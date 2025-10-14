@@ -1,4 +1,7 @@
-body {}
+body {
+    background-color: #F7E753;
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%)
+}
 
 header {
     text-align: center;
@@ -7,9 +10,35 @@ header {
 main {
     max-width: 800px;
     margin: 50px auto;
+    
 }
+.square{
+background-color: red;
+    width: 100px;
+    height: 100px;
+    margin: 75px auto;
 
+    animation: shape-1 2s infinite alternate;
 
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    margin: 75px auto;
+    background-color: #ff69a9;
+    animation: shape-1 2s infinite alternate;
+ }
+
+@keyframes shape-1 {
+    0%{
+        border-radius: 0px;
+        background-color: #ff69a9;
+    }
+    100%{
+        border-radius: 100px;
+        background-color: #64D0F7;
+    }
+}
 .section-1 {
 
 }
