@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Misrak Seneserat-Ayele | Portfolio</title>
+  <meta name="description" content="Misrak is a digital artist working in web design, illustration, and 3D modeling.">
+  <meta name="keywords" content="Misrak, digital artist, 3D models, illustration, art, portfolio">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="hero">
+    <div class="content-wrapper">
+      <h1>Misrak Seneserat-Ayele</h1>
+      <h2>Digital Artist</h2>
+      <p>Exploring creativity through web design, illustration, and 3D modeling.</p>
+      <a class="btn" href="#">Download PDF</a>
+    </div>
+  </header>
+
+  <main class="content-wrapper">
+    <section id="profile" class="resume-section">
+      <h2>Profile</h2>
+      <p>Misrak is a digital artist passionate about blending technology and creativity. Her work focuses on storytelling through vibrant illustrations, 3D forms, and interactive web experiences.</p>
+    </section>
+
+    <section id="education" class="resume-section">
+      <h2>Education</h2>
+      <article class="project-item">
+        <h3>San José State University</h3>
+        <p><strong>Major:</strong> Digital Media Art (in progress)</p>
+        <p>Focusing on interactive design, digital painting, and visual storytelling.</p>
+      </article>
+    </section>
+
+    <section id="artworks" class="resume-section">
+      <h2>Gallery</h2>
+
+      <div class="gallery">
+        <h3>Painting & Illustration</h3>
+        <div class="image-grid">
+          <img src="images/oil paint.jpg" alt="Oil Painting" class="popup-img" data-caption="Oil Painting on Canvas">
+          <img src="images/ink.jpg" alt="Ink Illustration" class="popup-img" data-caption="Ink Illustration Study">
+          <img src="images/pen.jpg" alt="Pen Drawing" class="popup-img" data-caption="Pen Drawing on Paper">
+          <img src="images/pencil.jpg" alt="Pencil Sketch" class="popup-img" data-caption="Graphite Sketch">
+        </div>
+      </div>
+
+      <div class="gallery">
+        <h3>Photography</h3>
+        <div class="image-grid">
+          <img src="images/IMG_2736.jpg" alt="Landscape" class="popup-img" data-caption="Landscape Scene">
+          <img src="images/IMG_1078.jpg" alt="Trail" class="popup-img" data-caption="Hiking Trail Photo">
+          <img src="images/IMG_0277.jpg" alt="Forest" class="popup-img" data-caption="Forest Capture">
+          <img src="images/IMG_0757.jpg" alt="Nature Light" class="popup-img" data-caption="Evening Light in Nature">
+        </div>
+      </div>
+
+      <div class="gallery">
+        <h3>Sculpture</h3>
+        <div class="image-grid">
+          <img src="images/sculpture.jpg" alt="Star Tetrahedron" class="popup-img" data-caption="Star Tetrahedron Sculpture">
+          <img src="images/scupture2.jpg" alt="Mixed Media Sculpture" class="popup-img" data-caption="Mixed Media Sculpture">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 by Misrak Seneserat-Ayele | 
+      <a href="mailto:misrak.seneserat-ayele@sjsu.edu">misrak.seneserat-ayele@sjsu.edu</a>
+    </p>
+    <ul class="socials">
+      <li><a href="https://x.com" target="_blank"><img src="placeholder-images/icon-logo-twitter.png" alt="Twitter"></a></li>
+      <li><a href="https://www.linkedin.com" target="_blank"><img src="placeholder-images/icon-logo-linkedin.png" alt="LinkedIn"></a></li>
+      <li><a href="https://www.instagram.com" target="_blank"><img src="placeholder-images/icon-logo-instagram.png" alt="Instagram"></a></li>
+    </ul>
+  </footer>
+
+  <!-- Popup Modal for Image Slideshow -->
+  <div id="popup" class="popup">
+    <span class="close">&times;</span>
+    <img class="popup-content" id="popup-img" alt="">
+    <div id="caption"></div>
+  </div>
+
+  <script>
+    // Image Popup Slideshow
+    const popup = document.getElementById('popup');
+    const popupImg = document.getElementById('popup-img');
+    const captionText = document.getElementById('caption');
+    const closeBtn = document.querySelector('.close');
+
+    document.querySelectorAll('.popup-img').forEach(img => {
+      img.addEventListener('click', () => {
+        popup.style.display = 'flex';
+        popupImg.src = img.src;
+        captionText.innerText = img.dataset.caption;
+      });
+    });
+
+    closeBtn.addEventListener('click', () => popup.style.display = 'none');
+    popup.addEventListener('click', e => {
+      if (e.target === popup) popup.style.display = 'none';
+    });
+  </script>
+</body>
+</html>

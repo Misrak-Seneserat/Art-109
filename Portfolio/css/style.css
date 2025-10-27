@@ -282,3 +282,30 @@ footer {
         padding: 10px;
     }
 }
+
+
+/* TOOLTIP STYLE */
+.tooltip {
+  position: absolute;
+  background: rgba(44, 44, 44, 0.9);
+  color: #f6f6f6;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  transform: translate(-50%, -10px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 999;
+}
+
+.tooltip.show {
+  opacity: 1;
+  transform: translate(-50%, -4px);
+}
+
+[data-tooltip]:hover {
+  cursor: help;
+  filter: brightness(1.05);
+  transition: filter 0.3s ease;
+}
