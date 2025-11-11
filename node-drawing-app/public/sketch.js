@@ -1,5 +1,10 @@
+var socket;
+
 function setup() {
 creatCanvas(200, 200);
+background(51);
+
+socket = io.connect('http://localhost:3000')
 }
 
 function draw() {
