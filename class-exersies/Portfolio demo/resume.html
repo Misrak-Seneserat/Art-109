@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Misrak Seneserat-Ayele | Resume</title>
+  <meta name="description" content="Misrak is a digital artist working in web design, illistration, and 3D modeling.">
+  <meta name="keywords" content="Misak, Digital artists, 3D models, illistration, fun, cool, art">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="resume">
+
+  <header>
+    <div class="content-wrapper">
+      <h1>Misrak Seneserat-Ayele</h1>
+      <h2>Artist</h2>
+    </div>
+  </header>
+
+  <main class="content-wrapper">
+    <section class="resume-section">
+      <h2 data-tooltip="A brief overview of your artistic vision.">Profile</h2>
+      <p>Hello, my name is Misrak. I am a first-generation Ethiopian
+          American multimedia artist. My work often involves visual experimentation,
+          spirituality, my culture, and knowledge. I aim to create
+          projects that are visually thought-provoking and invite
+          reflection. Thanks for stopping by!</p>
+    </section>
+
+    <section class="resume-section">
+      <h2 data-tooltip="Education and academic background.">Education</h2>
+      <section class="project-item">
+        <h3>San Jose State University - San Jose</h3>
+        <p>Major: Digital Art Media (in progress) </p>
+      </section>
+    </section>
+
+    <section class="resume-section">
+      <h2 data-tooltip="Hover over images to see details.">Painting / Illustration</h2>
+       <section class="project-item">
+         <img src="images/ink.jpg" alt="ink painting" data-tooltip="Ink Illustration Study">
+        <img src="images/pen.jpg" alt="pen illustration" data-tooltip="Pen Drawing on Paper">
+        <img src="images/pencil.jpg" alt="pencil illustration" data-tooltip="Graphite Sketch">
+      </section>
+      <section class="project-item">
+        <img src="images/oil paint.jpg" alt="oil painting" data-tooltip="Oil Painting on Canvas">
+      </section>
+
+
+
+      <h2 data-tooltip="Captured nature through your lens.">Photography</h2>
+      <section class="project-item">
+        <img src="images/IMG_2736.jpg" alt="nature" data-tooltip="Mountain Trail">
+        <img src="images/IMG_1078.jpg" alt="hike trail" data-tooltip="Hiking Trail">
+        <img src="images/IMG_0277.jpg" alt="nature" data-tooltip="Forest Capture">
+        <img src="images/IMG_0757.jpg" alt="nature" data-tooltip="Fruit Stand">
+        <img src="images/IMG_4025.jpg" alt="nature" data-tooltip="Landscape Scene">
+        <img src="images/IMG_4121.jpg" alt="nature" data-tooltip="Park Bench">
+        <img src="images/IMG_4526.jpg" alt="nature" data-tooltip="Wilderness View">
+        <img src="images/IMG_5511.jpg" alt="nature" data-tooltip="Riverbank Scene">
+      </section>
+
+      <h2 data-tooltip="Three-dimensional work exploration.">Sculpture</h2>
+      <section class="project-item">
+        <img src="images/sculpture.jpg" alt="star tetrahedron" data-tooltip="Star Tetrahedron Sculpture">
+        <img src="images/scupture2.jpg" alt="star tetrahedron" data-tooltip="Star Tetrahedron Sculpture">
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 by Misrak Seneserat-Ayele | 
+      <a href="mailto:misrak.seneserat-ayele@sjsu.edu">misrak.seneserat-ayele@sjsu.edu</a>
+    </p>
+    <ul class="socials">
+      <li><a href="https://x.com" target="_blank"><img src="placeholder-images/icon-logo-twitter.png" alt="Twitter"></a></li>
+      <li><a href="https://www.linkedin.com" target="_blank"><img src="placeholder-images/icon-logo-linkedin.png" alt="LinkedIn"></a></li>
+      <li><a href="https://www.facebook.com/login" target="_blank"><img src="placeholder-images/icon-logo-facebook.png" alt="Facebook"></a></li>
+      <li><a href="https://www.youtube.com" target="_blank"><img src="placeholder-images/icon-logo-youtube.png" alt="YouTube"></a></li>
+      <li><a href="https://www.instagram.com" target="_blank"><img src="placeholder-images/icon-logo-instagram.png" alt="Instagram"></a></li>
+    </ul>
+  </footer>
+
+  <script>
+    // Tooltip hover logic
+    document.querySelectorAll('[data-tooltip]').forEach(el => {
+      el.addEventListener('mouseenter', e => {
+        const tip = document.createElement('div');
+        tip.className = 'tooltip';
+        tip.innerText = el.dataset.tooltip;
+        document.body.appendChild(tip);
+        const rect = el.getBoundingClientRect();
+        tip.style.left = rect.left + rect.width / 2 + 'px';
+        tip.style.top = rect.top - 30 + window.scrollY + 'px';
+        requestAnimationFrame(() => tip.classList.add('show'));
+        el._tooltip = tip;
+      });
+
+      el.addEventListener('mouseleave', () => {
+        if (el._tooltip) {
+          el._tooltip.remove();
+          el._tooltip = null;
+        }
+      });
+    });
+  </script>
+</body>
