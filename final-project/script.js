@@ -9,11 +9,10 @@ function shake() {
     ball.classList.add("shake")
 
     setTimeout(function () { ball.classList.remove("shake"); }, 1000)
-    setTimeout(function ({ getFortune();
-}, 1000))
-
-
+    setTimeout(function ({ getFortune(); }, 1000))
 }
+
+
 
 function getFortune() {
     var fortunes = [ 'Your Mom' , 'Duck!' , 'How did you even get in this situation?' , 
@@ -33,6 +32,6 @@ function getFortune() {
     var parent = document.getElementById("fortune")
     var newMessage = document.createElement("div")
     newMessage.setAttribute('id', "message")
-    newMessage.innerHTML = "\"" + forune + "\""
+    newMessage.innerHTML = "\"" + fortune + "\""
     parent.appendChild(newMessage)
 }
