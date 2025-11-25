@@ -1,23 +1,3 @@
-.ball-container {
-    position: relative;
-    display: inline-block;
-}
-
-#fortune {
-    position: absolute;
-    top: 42%;       /* adjust this up/down */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 120px;   /* adjust to fit your triangle */
-    text-align: center;
-    color: white;
-    font-size: 14px;
-    line-height: 1.2;
-    font-weight: bold;
-    pointer-events: none;  /* keep clicks on the image */
-}
-
-
 function shake() {
     var ball = document.getElementById("ball");
     var messageText = document.getElementById("message");
