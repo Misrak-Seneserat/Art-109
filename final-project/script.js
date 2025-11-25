@@ -2,16 +2,13 @@ function shake() {
     var ball = document.getElementById("ball");
     var messageText = document.getElementById("message");
 
-    if (messageText) {
-        messageText.remove();
-    }
+    
 
     ball.classList.add("shake");
 
-    setTimeout(() => {
-        ball.classList.remove("shake");
-        getFortune();
-    }, 1000);
+    setTimeout(function(){ball.classList.remove("shake");}, 1000 )
+    setTimeout(function(){getFortune();}, 1000)
+
 }
 
 function getFortune() {
@@ -27,10 +24,13 @@ function getFortune() {
         'No, but someone else is having it much better than you',
         'You’re joking, right?', 
         'We have been trying to contact you about your car’s extended warranty'
-    ];
-
-    var fortune = fortunes[Math.floor(Math.random() * fortunes.length)];
+    ]
+     var fortune = fortunes[Math.floor(Math.random() * fortunes.length)];
 
     var parent = document.getElementById("fortune");
-    parent.innerHTML = "\"" + fortune + "\"";
+    var newMessage = document.createElement("div")
+    newMessage.setAttribute('id', "message")
+    newMessage.innerHTML = "\"" + fortune + "\""
+    parent.appendChild(newMessage);
+
 }
