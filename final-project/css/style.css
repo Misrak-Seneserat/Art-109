@@ -4,26 +4,49 @@
 
 
 @keyframes shake {
-    0% {transform: translate(4px, 4px) rotate(0deg);}
-    10% {transform: translate(-4px, -4px) rotate(-1deg);}
+    0% {
+        transform: translate(4px, 4px) rotate(0deg);
+    }
 
-    20% {transform: translate(-7px, 0px) rotate(1deg);}
+    10% {
+        transform: translate(-4px, -4px) rotate(-1deg);
+    }
 
-    30% {transform: translate(7px, 4px) rotate(0deg);}
+    20% {
+        transform: translate(-7px, 0px) rotate(1deg);
+    }
 
-    40% {transform: translate(4px, -4px) rotate(1deg);}
+    30% {
+        transform: translate(7px, 4px) rotate(0deg);
+    }
 
-    50% {transform: translate(-4px, 4px) rotate(-1deg);}
+    40% {
+        transform: translate(4px, -4px) rotate(1deg);
+    }
 
-    60% {transform: translate(-7px, 4px) rotate(0deg);}
+    50% {
+        transform: translate(-4px, 4px) rotate(-1deg);
+    }
 
-    70% {transform: translate(7px, 4px) rotate(-1deg);}
+    60% {
+        transform: translate(-7px, 4px) rotate(0deg);
+    }
 
-    80% {transform: translate(-4px, -4px) rotate(1deg);}
+    70% {
+        transform: translate(7px, 4px) rotate(-1deg);
+    }
 
-    90% {transform: translate(4px, 4px) rotate(0deg);}
+    80% {
+        transform: translate(-4px, -4px) rotate(1deg);
+    }
 
-    100% {transform: translate(4px, -4px) rotate(-1deg); }
+    90% {
+        transform: translate(4px, 4px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(4px, -4px) rotate(-1deg);
+    }
 }
 
 
@@ -33,7 +56,6 @@ body {
     color: white;
     margin: 0;
     padding: 0;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,14 +74,14 @@ body {
 
 button {
     margin-top: 1em;
-    padding:15px 30px;
+    padding: 15px 30px;
     color: #fff;
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
     border: 2px solid #00ccff;
-    border-radius:10px;
+    border-radius: 10px;
     background-color: transparent;
     cursor: pointer;
     transition: 0.3s;
@@ -67,30 +89,29 @@ button {
     overflow: hidden;
 }
 
-.glow::before{
+.glow::before {
     content: '';
-    position:absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius:  10px;
-   background: radial-gradient(circle, rgba(0, 234, 255, 0.3), rgba(0, 0, 0, 0));
+    border-radius: 10px;
+    background: radial-gradient(circle, rgba(0, 234, 255, 0.3), rgba(0, 0, 0, 0));
     opacity: 0;
     transition: opacity 0.3s;
 }
 
-.glow:hover{
+.glow:hover {
     background-color: #00ccff;
     color: #0d0d0d;
     box-shadow: 0 0 15px #00ccff, 0 0 30px #00ccff, 0 0 45px #00ccff;
 
 }
 
-.glow:hover::before{
+.glow:hover::before {
     opacity: 1;
 }
-
 
 .center {
     text-align: center;
@@ -108,7 +129,7 @@ h1 {
     text-align: center;
 }
 
-#fortune{
+#fortune {
     display: inline;
 }
 
@@ -118,30 +139,29 @@ h1 {
     width: 100%;
 }
 
-.ball{
- width: 200px;
- height: 200px;
- background-color: black; 
- border-radius: 50%;
- display: flex;
- justify-content: center;
- align-items: center;  
+#ball {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.whitesurface{
-    width: 100px;
-    height: 100px;
+.whitesurface {
+    width: 120px;
+    height: 120px;
     background-color: white;
     border-radius: 50%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
 }
 
-.ball-text{
-    width: 70px;
+.ball-text {
+    font-size: 18px; 
     color: black;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 80px;
 }

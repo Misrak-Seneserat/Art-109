@@ -1,13 +1,18 @@
 function shake() {
 
-    var ball = document.getElementById("ball")
-    var messageText = document.getElementById("message")
+    var ball = document.getElementById("ball");
 
     ball.classList.add("shake");
-    setTimeout(function () { ball.classList.remove("shake"); }, 1500);
-    setTimeout(function () { getFortune(); }, 1500);
-}
 
+    setTimeout(function () {
+        ball.classList.remove("shake");
+    }, 1500);
+
+    setTimeout(function () {
+        getFortune();
+        document.getElementById("question").value = ""; // clear text box
+    }, 1500);
+}
 
 function getFortune() {
     var fortunes = ['Your Mom', 'Duck!', 'How did you even get in this situation?', 'How about NO?',
@@ -20,6 +25,10 @@ function getFortune() {
         'We have been trying to contact you about your car’s extended warranty']
 
     var fortune = fortunes[Math.floor(Math.random() * fortunes.length)];
+    var whiteSurface = document.querySelector(".whitesurface");
+    whiteSurface.innerHTML = `
+        <p class="ball-text" style="font-size:20px; padding:10px;">${fortune}</p>
+    `;
 
     var parent = document.getElementById("fortune");
     var newMessage = document.createElement("div");
