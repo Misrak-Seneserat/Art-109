@@ -31,18 +31,30 @@
 body {
     background-color: #3e3e60;
     color: white;
+    margin: 0;
+    padding: 0;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    gap: 25px;
 }
 
-img {
-    padding-left: 2em;
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 button {
     margin-top: 1em;
     padding:15px 30px;
     color: #fff;
-    font: size 18px;
+    font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
@@ -63,7 +75,7 @@ button {
     width: 100%;
     height: 100%;
     border-radius:  10px;
-    background: radial-gradient(circle, rgba(0, 234, 255, 0.3) rgba(0, 0 , 0, 0));
+   background: radial-gradient(circle, rgba(0, 234, 255, 0.3), rgba(0, 0, 0, 0));
     opacity: 0;
     transition: opacity 0.3s;
 }
@@ -76,7 +88,7 @@ button {
 }
 
 .glow:hover::before{
-    opacity: 1s;
+    opacity: 1;
 }
 
 
@@ -92,14 +104,44 @@ h1 {
 
 #message {
     font-size: 2em;
-    margin-top: 4em;
-    margin-left: 2em;
+    margin-top: 1em;
+    text-align: center;
 }
 
 #fortune{
     display: inline;
 }
 
-.row{
+.row {
     display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.ball{
+ width: 200px;
+ height: 200px;
+ background-color: black; 
+ border-radius: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;  
+}
+
+.whitesurface{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ball-text{
+    width: 70px;
+    color: black;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 80px;
 }

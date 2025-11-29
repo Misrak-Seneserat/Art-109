@@ -9,17 +9,33 @@
     <title>Magic 8ball</title>
 </head>
 
-<body>
-    <div class="center">
-        <h1>Ask Me Anything:</h1>
-        <button class="glow" class="btn btn-primary" onClick="shake()">Shake</button>
+<body class="center">
+    <h1>Magic 8-Ball</h1>
+    <div class="game-container">
+        <div class="d-flex align-content-center justify-content-center">
+            <div id="ball">
+                <div class="whitesurface">
+                    <p class="ball-text">8</p>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Ask Me Anything..." id="question">
+        <div class="input-group-append">
+            <button class="btn btn-dark glow" id="submit-btn" onclick="shake()">Shake</button>
+        </div>
+
+
+    </div>
+
 
     <div>
 
         <div class="row">
             <img id="ball" src="images/black-magic-ball-on-white-background-vector-30158013.jpg.avif" alt="Magic 8ball">
-            <div id="fortune">
+            <div class="center" id="fortune">
 
             </div>
 
