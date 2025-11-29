@@ -20,7 +20,7 @@ function getFortune() {
 'We have been trying to contact you about your car’s extended warranty']
 
     var fortune = fortunes[Math.floor(Math.random() * fortunes.length)];
-    
+     
     var parent = document.getElementById("fortune");
     var newMessage = document.createElement("div");
     newMessage.setAttribute('id', "message");
