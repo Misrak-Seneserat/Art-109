@@ -1,16 +1,12 @@
 function shake() {
 
     var ball = document.getElementById("ball");
-
     ball.classList.add("shake");
 
-    setTimeout(function () {
+       setTimeout(function () {
         ball.classList.remove("shake");
-    }, 1500);
-
-    setTimeout(function () {
-        getFortune();
-        document.getElementById("question").value = ""; // clear text box
+        getFortune();                       
+        document.getElementById("question").value = ""; 
     }, 1500);
 }
 
@@ -22,26 +18,11 @@ function getFortune() {
         'Answer vague keep rubbing me.', 'You ARE the father!', 'Absolutely, positively, unequivocally, definitely maybe.',
         'Reply hazy.Look it up on Google', 'Go ask a real person.', 'Lawyer Up', 'Oh, it’s you again',
         'No, but someone else is having it much better than you.', 'You’re joking, right ?',
-        'We have been trying to contact you about your car’s extended warranty']
+        'We have been trying to contact you about your car’s extended warranty'];
+        var fortune = fortunes[Math.floor(Math.random() * fortunes.length)];
 
-    var fortune = fortunes[Math.floor(Math.random() * fortunes.length)];
+   
     var whiteSurface = document.querySelector(".whitesurface");
-    whiteSurface.innerHTML = `
-        <p class="ball-text" style="font-size:20px; padding:10px;">${fortune}</p>
-    `;
+    whiteSurface.innerHTML = `<p class="ball-text" style="font-size:20px; padding:10px;">${fortune}</p>`;
 
-    var parent = document.getElementById("fortune");
-    var newMessage = document.createElement("div");
-    newMessage.setAttribute('id', "message");
-    newMessage.innerHTML = "\"" + fortune + "\"";
-    parent.appendChild(newMessage); var fortune = fortunes[Math.floor(Math.random() * fortunes.length)];
-
-    var parent = document.getElementById("fortune");
-    parent.innerHTML = "";
-
-    var newMessage = document.createElement("div");
-    newMessage.id = "message";
-    newMessage.innerHTML = "\"" + fortune + "\"";
-
-    parent.appendChild(newMessage);
 }
