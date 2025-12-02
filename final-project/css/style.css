@@ -1,3 +1,7 @@
+:root{
+    #f4e6ff, #e2bfff, #6085bf, #9460bf, #bf6073
+}
+
 .shake {
     animation: shake 1s;
 }
@@ -55,7 +59,7 @@
 
 .text {
     font-weight: bold;
-    text-shadow: 1px 3px #c1c1c1;
+    text-shadow: 1px 3px #00ccff;
     letter-spacing: 10px;
     border-right: 5px solid;
     width: 100%;
@@ -77,8 +81,9 @@
 
 
 body {
-    background-image: radial-gradient(#00ccff, #b76ff6, #d0078a);
-    color: white;
+    background-color: #bdb2ff;
+    background-image: radial-gradient( #f4e6ff, #e2bfff, #6085bf, #9460bf, #bf6073
+    );
     margin: 0;
     padding: 0;
     display: flex;
@@ -87,6 +92,17 @@ body {
     justify-content: flex-start;
     min-height: 100vh;
     gap: 25px;
+    background-size: 500% 500%;
+    animation: move 10s alternate infinite;
+}
+
+@keyframes move { 
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 100% 100%;
+    }
 }
 
 .game-container {
