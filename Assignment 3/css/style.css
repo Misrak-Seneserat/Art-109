@@ -1,0 +1,71 @@
+/* GENERAL PAGE STYLING */
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: #111;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* NAVIGATION */
+nav {
+    background: #333;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #555;
+}
+
+/* SECTIONS */
+section {
+    padding: 40px;
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+}
+
+/* HEADINGS */
+h1, h2 {
+    text-align: center;
+}
+
+/* ARTWORK BLOCKS */
+.artwork {
+    margin-bottom: 50px;
+}
+
+.artwork img {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+}
+
+/* PARAGRAPH SPACING */
+p {
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: white;
+    margin-top: 40px;
+}
