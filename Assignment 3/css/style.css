@@ -16,6 +16,11 @@ header {
     text-align: center;
 }
 
+.indent {
+  text-indent: 2em;
+}
+
+
 /* NAVIGATION */
 nav {
     background: #595b3e;
